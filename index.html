@@ -893,6 +893,30 @@
           <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
           <script>
             document.addEventListener('DOMContentLoaded', () => {
+              // if (window.location.hash) {
+              //     setTimeout(() => {
+              //       const targetElement = document.querySelector(window.location.hash);
+              //       if (targetElement) {
+              //         targetElement.scrollIntoView({ behavior: "smooth" });
+              //       }
+              //     }, 500);  
+              //   }
+              const urlParams = new URLSearchParams(window.location.search);
+
+              if (urlParams.get('showMoreText') === 'true') {
+                const moreText = document.getElementById('more-text');
+                const toggleBtn = document.getElementById('toggle-btn');
+
+                if (moreText) {
+                  moreText.classList.remove('hidden');
+                }
+
+                if (toggleBtn) {
+                  toggleBtn.textContent = 'قراءة أقل';
+                }
+              }
+
+
                 // ✅ Initialize AOS animations correctly
                 AOS.init({
                     duration: 1000,
@@ -1000,6 +1024,16 @@
                     btn.textContent = 'قراءة المزيد';
                 }
             });
+
+            document.querySelectorAll('footer .places-container a').forEach((link)=>{
+              link.addEventListener('click', ()=>{
+                const moreText = document.getElementById('more-text');
+                if(moreText.classList.contains('hidden')){
+                  moreText.classList.remove('hidden');
+                  document.getElementById('toggle-btn').textContent = 'قراءة أقل';
+                }
+              })
+            })
         </script>
         
         
