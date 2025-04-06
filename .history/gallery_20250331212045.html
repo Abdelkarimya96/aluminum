@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مصنع ألومنيوم</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="./project assets/gallery/العسيري لوجو.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!--  *****   Link To Font Awsome Icons   *****  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light py-0"
+      style="background-color: black !important"
+    >
+      <div dir="rtl" class="container">
+        <a class="navbar-brand py-0" href="index.html"
+          ><img
+            style="width: 160px; border-radius: 50%"
+            src="/project assets/gallery/العسيري لوجو.svg"
+            alt="#"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#nav-links"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-capitalize" id="nav-links">
+          <ul dir="rtl" class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a
+                class="nav-link nav-link-1 active"
+                href="index.html"
+                aria-current="page"
+                >الرئيسية <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-2" href="gallery.html"
+                >معرض الأعمال</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-3" href="index.html#service">خدماتنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-4" href="index.html#project">المشاريع</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-5" href="index.html#contact">تواصل معنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-6" href="index.html#about">حول</a>
+            </li>
+            <!-- <li class="nav-item">
+                      <a class="nav-link log" href="#">Log in/Register</a>
+                  </li>
+                  <li class="nav-item search">
+                      <a class="nav-link search-link" href=""><i class="fas fa-search"></i></a>
+                      <form>
+                          <input type="search">
+                      </form>
+                  </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <header id="home">
+        <div class="content">
+            <div class="d-flex align-items-center flex-column justify-content-center">
+                <h1>Welcome To <br>Workland Factory</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                <a href="#">
+                    <span>read more</span>
+                    <i class="fas fa-long-arrow-alt-right fa-2x"></i>
+                </a>
+            </div>
+        </div>
+      <div id="slideToNext" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imgs/header.png" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/header.png" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/header.png" class="d-block w-100">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#slideToNext" role="button" data-slide="prev">
+          <i class="fas fa-chevron-left"></i>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#slideToNext" role="button" data-slide="next">
+          <i class="fas fa-chevron-right"></i>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+ </header> -->
+
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+
+    <section class="portfolio py-5" style="margin-top: 8rem;">
+      <header style="max-height: fit-content" class="section-head" data-aos="fade-down">
+        <h1>معرض الأعمال</h1>
+      </header>
+    
+      <main class="mainContainer">
+        <!-- Buttons Section -->
+        <div dir="rtl" class="button-group" data-aos="fade-up">
+          <button class="button active" data-filter="*">الكل</button>
+          <button class="button" data-filter=".doors">أبواب</button>
+          <button class="button" data-filter=".handrail">درابزين</button>
+          <button class="button" data-filter=".kitchen">مطابخ</button>
+        </div>
+    
+        <!-- Gallery Section -->
+        <div class="gallery">
+          <div class="item kitchen">
+            <img src="project assets/gallery/مطابخ/IMG-20250320-WA0036.jpg" />
+          </div>
+          <div class="item handrail">
+            <img src="/project assets/gallery/درابزين/IMG-20250320-WA0017.jpg" />
+          </div>
+          <div class="item doors">
+            <img src="/project assets/gallery/أبواب/img100.jpg" />
+          </div>
+
+          <div class="item kitchen">
+            <img src="project assets/gallery/مطابخ/IMG-20250320-WA0037.jpg" />
+          </div>
+          <div class="item handrail">
+            <img src="/project assets/gallery/درابزين/IMG-20250320-WA0023.jpg" />
+          </div>
+          <div class="item doors">
+            <img src="/project assets/gallery/أبواب/img103.jpg" />
+          </div>
+        
+          <div class="item kitchen">
+            <img src="project assets/gallery/مطابخ/IMG-20250320-WA0042.jpg" />
+          </div>
+          <div class="item handrail">
+            <img src="/project assets/gallery/درابزين/IMG-20250320-WA0026.jpg" />
+          </div>
+          <div class="item doors">
+            <img src="/project assets/gallery/أبواب/img109.jpg" />
+          </div>
+        
+          <div class="item kitchen">
+            <img src="project assets/gallery/مطابخ/IMG-20250320-WA0055.jpg" />
+          </div>
+          <div class="item handrail">
+            <img src="/project assets/gallery/درابزين/IMG-20250320-WA0027.jpg" />
+          </div>
+          <div class="item doors">
+            <img src="/project assets/gallery/أبواب/img112.jpg" />
+          </div>
+        
+          <div class="item kitchen">
+            <img src="project assets/gallery/مطابخ/IMG-20250320-WA0056.jpg" />
+          </div>
+          <div class="item handrail">
+            <img src="/project assets/gallery/درابزين/IMG-20250320-WA0035.jpg" />
+          </div>
+          <div class="item doors">
+            <img src="/project assets/gallery/أبواب/img115.jpg" />
+          </div>
+        
+          <div class="item kitchen">
+            <img src="project assets/gallery/مطابخ/IMG-20250320-WA0057.jpg" />
+          </div>
+          <div class="item handrail">
+            <img src="/project assets/gallery/درابزين/IMG-20250320-WA0038.jpg" />
+          </div>
+          <div class="item doors">
+            <img src="/project assets/gallery/أبواب/img118.jpg" />
+          </div>
+        
+          <div class="item kitchen">
+            <img src="project assets/gallery/مطابخ/IMG-20250320-WA0058.jpg" />
+          </div>
+          <div class="item handrail">
+            <img src="/project assets/gallery/درابزين/IMG-20250320-WA0077.jpg" />
+          </div>
+          <div class="item doors">
+            <img src="/project assets/gallery/أبواب/img121.jpg" />
+          </div>
+        
+          <div class="item kitchen">
+            <img src="project assets/gallery/مطابخ/IMG-20250320-WA0059.jpg" />
+          </div>
+          <div class="item handrail">
+            <img src="/project assets/gallery/درابزين/IMG-20250320-WA0080.jpg" />
+          </div>
+          <div class="item doors">
+            <img src="/project assets/gallery/أبواب/img127.jpg" />
+          </div>
+        
+          <div class="item kitchen">
+            <img src="project assets/gallery/مطابخ/IMG-20250320-WA0060.jpg" />
+          </div>
+          <div class="item doors">
+            <img src="/project assets/gallery/أبواب/img17.jpg" />
+          </div>
+        
+          <div class="item kitchen">
+            <img src="project assets/gallery/مطابخ/IMG-20250320-WA0061.jpg" />
+          </div>
+          <div class="item doors">
+            <img src="/project assets/gallery/أبواب/img23.jpg" />
+          </div>
+        
+          <div class="item kitchen">
+            <img src="project assets/gallery/مطابخ/IMG-20250320-WA0062.jpg" />
+          </div>
+          <div class="item doors">
+            <img src="/project assets/gallery/أبواب/img4.jpg" />
+          </div>
+        
+          <div class="item kitchen">
+            <img src="project assets/gallery/مطابخ/IMG-20250320-WA0063.jpg" />
+          </div>
+          <div class="item doors">
+            <img src="/project assets/gallery/أبواب/img40.jpg" />
+          </div>
+        </div>
+        <!--  *****  Gallery Section Ends  *****  -->
+      </main>
+    </section>
+
+    <footer dir="rtl">
+      <div class="contain px-4 pt-lg-5 pb-2" data-aos="zoom-in">
+        <div class="row">
+
+          <!-- About the Company -->
+          <div class="col-lg-3 p-0" data-aos="fade-up">
+            <h5 class="mt-5 mb-4 me-0 title">روابط التواصل الإجتماعي</h5>
+            <!-- <p class="mb-3 about">
+              {{ info?.general_info?.about || 'لم يتم توفير معلومات عن الشركة' }}
+            </p> -->
+            <div class="d-flex gap-2 social-container">
+              <!-- WhatsApp -->
+              <a class="social-link"
+                href="https://wa.me/96551640401"
+                target="_blank"
+                rel="noopener noreferrer">
+                <span class="social-icon">
+                  <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                </span>
+              </a>
+           
+    
+              <!-- Instagram -->
+              <a class="social-link"
+                href="https://www.instagram.com/abdoelesiry6666/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <span class="social-icon">
+                  <i class="fab fa-instagram" aria-hidden="true"></i>
+                </span>
+              </a>
+    
+              <!-- TikTok -->
+              <a class="social-link"
+                [href]="info?.social_links?.tiktok"
+                target="_blank"
+                rel="noopener noreferrer">
+                <span class="social-icon">
+                  <i class="fa-brands fa-linkedin"></i>                    
+                </span>
+              </a>
+    
+              <!-- Snapchat -->
+              <a class="social-link"
+                [href]="info?.social_links?.snapchat"
+                target="_blank"
+                rel="noopener noreferrer">
+                <span class="social-icon">
+                  <fa-icon [icon]="faSnapchat" aria-hidden="true"></fa-icon>
+                  <i class="fab fa-snapchat" aria-hidden="true"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- existing places -->
+          <div class="col-lg-3 p-0" data-aos="fade-up">
+            <h5 class="mt-5 mb-4 me-0 title px-2">أماكن تواجدنا</h5>
+            <div class="row places-container">
+
+              <div class="col-md-6 p-0">
+                <ul>
+                  <li>
+                    <a
+                      href="index.html#a_1">
+                      الجهراء
+                    </a>
+                  </li>
+        
+                  <li>
+                    <a
+                      href="index.html#a_2">
+                      الصليبية
+                    </a>
+                  </li>
+        
+                  <li>
+                    <a
+                      href="index.html#a_3">
+                      الأحمدي
+                    </a>
+                  </li>
+        
+                  <li>
+                    <a
+                      href="index.html#a_4">
+                      النسيم
+                    </a>
+                  </li>
+        
+                  <li>
+                    <a
+                      href="index.html#a_5">
+                      الجهراء القديمة
+                    </a>
+                  </li>
+        
+                  <li>
+                    <a
+                      href="index.html#a_6">
+                        كاظمة
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-md-6 p-0">
+                <ul>
+                  <li>
+                    <a
+                      href="index.html#a_7">
+                       العاصمةالكويت
+                    </a>
+                  </li>
+        
+                  <li>
+                    <a
+                      href="index.html#a_8">
+                       الحرير 
+                    </a>
+                  </li>
+        
+                  <li>
+                    <a
+                      href="index.html#a_9">
+                       الروضتين
+                    </a>
+                  </li>
+        
+                  <li>
+                    <a
+                      href="index.html#a_10">
+                       حولي 
+                    </a>
+                  </li>
+        
+                  <li>
+                    <a
+                      href="index.html#a_11">
+                       الصبية
+                    </a>
+                  </li>
+        
+                  <li>
+                    <a
+                      href="index.html#a_12">
+                       الفروانية 
+                    </a>
+                  </li>
+        
+
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Quick Links -->
+          <div class="col-lg-3 p-0" data-aos="fade-up">
+            <h5 class="mt-5 mb-4 title  me-0">روابط سريعة</h5>
+            <ul>
+              <li>
+                  <i class="fa-solid fa-angle-left"></i>                      
+                <a
+                  href="#about">
+                  من نحن
+                </a>
+              </li>
+    
+              <li>
+                  <i class="fa-solid fa-angle-left"></i>                      
+                <a
+                  href="gallery.html">
+                  معرض الصور
+                </a>
+              </li>
+    
+              <li>
+                  <i class="fa-solid fa-angle-left"></i>                      
+                <a
+                  href="#service">
+                  خدماتنا
+                </a>
+              </li>
+    
+              <li>
+                  <i class="fa-solid fa-angle-left"></i>                      
+                <a
+                  href="#contact">
+                  تواصل معنا
+                </a>
+              </li>
+            </ul>
+          </div>
+    
+          <!-- Contact Us -->
+          <div class="col-lg-3 p-0" data-aos="fade-up">
+            <h5 class="mt-5 mb-4 title  me-0">تواصل معنا</h5>
+            <div class="info">
+              <!-- <fa-icon [icon]="faLocationDot" class="fa-info"></fa-icon> -->
+              <i class="fa-solid fa-location-dot fa-info"></i>                    
+              <span><strong>العنوان :</strong>حولي شارع بيروت مجمع بيروت الدور الأول محل رقم 10</span>
+            </div>
+            <div class="info">
+              <!-- <fa-icon [icon]="faPhone" class="fa-info"></fa-icon> -->
+              <i class="fa-solid fa-phone fa-info"></i>                   
+              <span><strong>رقم الهاتف:</strong> 
+                  <a dir="ltr" style="color: white;" href="tel:+96551640401">+965 51640401</a>
+              </span>
+            </div>                
+            <!-- <div class="info">
+              <i class="fa-solid fa-envelope fa-info"></i>
+              <span>البريد الإلكتروني: {{ info?.contact_info?.email }}</span>
+            </div> -->
+          </div>
+        </div>
+    
+        <div class="copyright">
+          <small>© جميع الحقوق محفوظة | شركة العسيري العالمية للألومنيوم 2025</small>
+        </div>
+      </div>
+  </footer>
+
+    <button id="scrollToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+        <!--   *****   JQuery Link   *****   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!--   *****   Isotope Filter Link   *****  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+      AOS.init({
+        duration: 1000, // Animation duration
+        easing: "ease-in-out",
+        once: true, // Animates only once
+      });
+        let scrlBtn = document.getElementById("scrollToTop");
+        let navbar = document.querySelector(".navbar");
+
+        window.addEventListener("scroll", () => {
+          // Show/hide scroll to top button
+          if (window.scrollY > 150) {
+            scrlBtn.classList.add("show");
+          } else {
+            scrlBtn.classList.remove("show");
+          }
+
+          // Sticky navbar effect
+          if (window.scrollY > 100) {
+            navbar.classList.add("sticky-nav");
+          } else {
+            navbar.classList.remove("sticky-nav");
+          }
+        });
+
+        scrlBtn.addEventListener("click", () => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+      });
+
+      $(function () {
+        "use strict";
+
+        var winH = $(window).height();
+        $("header, .slide").height(winH);
+
+        // $('.navbar a.search-link').on('click', function () {
+        //     $(this).siblings('form').fadeToggle();
+        // });
+
+        $('.navbar ul.navbar-nav li a, footer ul.main-list li a').on('click', function (e) {
+            var getAttr = $(this).attr('href');
+            e.preventDefault();
+            $('html').animate({scrollTop: $(getAttr).offset().top}, 1000);
+        });
+      });
+
+      $(window).on("load", function () {
+        $("body").addClass("loaded");
+      });
+      var $galleryContainer = $(".gallery").isotope({
+        itemSelector: ".item",
+        layoutMode: "fitRows",
+      });
+
+      $(".button-group .button").on("click", function () {
+        $(".button-group .button").removeClass("active");
+        $(this).addClass("active");
+
+        var value = $(this).attr("data-filter");
+        $galleryContainer.isotope({
+          filter: value,
+        });
+      });
+      
+
+      document.querySelectorAll('footer .places-container a').forEach((link)=>{
+              link.addEventListener('click', ()=>{
+                const moreText = document.getElementById('more-text');
+                if(moreText.classList.contains('hidden')){
+                  moreText.classList.remove('hidden');
+                  document.getElementById('toggle-btn').textContent = 'قراءة أقل';
+                }
+              })
+            })
+    </script>
+  </body>
+</html>
