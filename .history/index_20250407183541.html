@@ -334,7 +334,7 @@
                       <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="100">
                           <div class="service-box">
                               <img src="/project assets/services/أبواب.jpg" class="img-fluid" alt="أبواب">
-                              <p>تتميز شركة العسيري بتقديم مجموعة متنوعة من الأبواب المصممة وفق أعلى معايير الجودة والمتانة، لتلبية مختلف المتطلبات الهندسية والمعمارية. نقدم أبوابًا داخلية مصنوعة من مواد عالية الجودة مثل الخشب الصلب، الألمنيوم،  PVC، مع تشطيبات أنيقة وتصاميم عصرية تتناسب مع جميع الأذواق. نحرص على توفير حلول متكاملة للأبواب، تشمل العزل الحراري والصوتي، الأنظمة الذكية، والأمان المتطور، لضمان أفضل تجربة لعملائنا.</p>
+                              <p>تتميز شركة العسيري بتقديم مجموعة متنوعة من الأبواب المصممة وفق أعلى معايير الجودة والمتانة، لتلبية مختلف المتطلبات الهندسية والمعمارية. نقدم أبوابًا داخلية وخارجية مصنوعة من مواد عالية الجودة مثل الخشب الصلب، الألمنيوم، والـ PVC، مع تشطيبات أنيقة وتصاميم عصرية تتناسب مع جميع الأذواق. نحرص على توفير حلول متكاملة للأبواب، تشمل العزل الحراري والصوتي، الأنظمة الذكية، والأمان المتطور، لضمان أفضل تجربة لعملائنا.</p>
                           </div>
                       </div>
                       <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
@@ -926,7 +926,6 @@
                 // ✅ Select elements and ensure they exist
                 let scrlBtn = document.getElementById('scrollToTop');
                 let navbar = document.querySelector(".navbar");
-                let brand_img = document.querySelector('.navbar-brand img');
         
                 if (!navbar) {
                     console.error("Navbar not found!");
@@ -947,10 +946,8 @@
                 window.addEventListener('scroll', () => {
                     if (window.scrollY > 150) {
                         scrlBtn.classList.add('show');
-                        brand_img.classList.remove('brand-hidden');
                     } else {
                         scrlBtn.classList.remove('show');
-                        brand_img.classList.add('brand-hidden');
                     }
         
                     if (window.scrollY > 100) {

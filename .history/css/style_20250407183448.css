@@ -249,7 +249,7 @@ h2 {
   color: var(--gold-color)!important;
 }
 
-nav .navbar-brand .brand-hidden{
+.navbar .brand-hidden{
   visibility: hidden;
 }
 
